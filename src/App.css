@@ -1,32 +1,32 @@
 body {
-    background-image: url('./sfondo.webp'); /* Percorso relativo */
-    background-size: cover; /* Copre tutto lo schermo */
+    background-image: url('./sfondo.webp'); 
+    background-size: cover; 
     background-position: center;
     
-    height: 100vh; /* Altezza 100% viewport */
+    height: 100vh; 
     margin-top: 20px;
     padding-top: 50px;
   }
   .custom-alert {
     background-color: rgba(211, 211, 211, 0.6) !important;
     backdrop-filter: blur(2px);
-    color: red !important; /* Testo rosso */
+    color: red !important; 
     text-align: center;
     font-size: 2rem;
     padding: 20px;
     border-radius: 10px;
     
     box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.5);
-    font-family: 'Creepster', cursive; /* Font "sangue gocciolante" */
+    font-family: 'Creepster', cursive; 
   }
   
-  /* Importiamo il font "Creepster" per il testo horror */
+  
   @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
-  /* Ombreggiatura sulla scritta */
+ 
 .custom-alert h1 {
-    text-shadow: 4px 4px 10px rgba(255, 0, 0, 0.8), /* Ombra rossa */
-                 -2px -2px 5px rgba(0, 0, 0, 0.5); /* Ombra nera per effetto 3D */
+    text-shadow: 4px 4px 10px rgba(255, 0, 0, 0.8), 
+                 -2px -2px 5px rgba(0, 0, 0, 0.5); 
 }
 
 
@@ -38,16 +38,17 @@ body {
 }
 
 .book-card:hover {
-  transform: scale(1.05); /* Ingrandisce leggermente la card */
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Ombreggiatura più intensa */
+  transform: scale(1.05); 
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); 
 }
 
 .not-found-img {
-  max-width: 80%; /* Limita la dimensione per evitare che sia troppo grande */
-  height: auto; /* Mantiene le proporzioni */
-  margin-top: 20px; /* Distanza dal testo */
-  display: block; /* Evita spazi extra sotto l'immagine */
+  max-width: 80%; 
+  height: auto; 
+  margin-top: 20px; 
+  display: block; 
   margin-left: auto;
   margin-right: auto;
+  border-radius: 15px;
 }
 

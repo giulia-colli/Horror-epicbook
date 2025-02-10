@@ -10,6 +10,7 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NotFound from './NotFound'
 import BookDetails from './BookDetails'
+import BloodEffect from './BloodEffect';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('')
@@ -17,6 +18,7 @@ function App() {
     <BrowserRouter>
       <MyNav searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <Container>
+        <BloodEffect />
         <SkullAnimation />
         <Welcome />
         <Routes>

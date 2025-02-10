@@ -2,21 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Quicksand:wght@700&display=swap');
 
 
-  /* Rimuove la sottolineatura dai link della navbar */
+  
 .navbar a,
 .navbar .nav-link,
 .navbar-brand {
-  text-decoration: none !important; /* Rimuove la sottolineatura */
-  color: white !important; /* Mantiene il colore bianco */
+  text-decoration: none !important; 
+  color: white !important; 
   font-family: 'Poppins', sans-serif; 
   font-weight: 700; 
   font-size: 1.2rem;
 }
 
-/* Anche quando si passa sopra, niente sottolineatura */
+
 .navbar a:hover,
 .navbar .nav-link:hover,
 .navbar-brand:hover {
   text-decoration: none !important;
-  color: #ff4747 !important; /* Cambia colore al passaggio del mouse */
+  color: #ff4747 !important; 
 }

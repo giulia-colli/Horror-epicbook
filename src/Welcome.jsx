@@ -1,9 +1,9 @@
 import { Alert } from 'react-bootstrap';
-import './App.css'; // Assicuriamoci che il CSS sia importato
+import './App.css'; 
 
 const Welcome = () => (
   <Alert className="custom-alert">
-    <h1>Horror EpiBooks</h1>
+    <h1>Fear the Horror EpicBooks</h1>
   </Alert>
 );
 

@@ -23,7 +23,7 @@ const SingleBook = ({ setSelected, selected, book }) => {
             className="w-100 mt-2"
             onClick={() => navigate(`/details/${book.asin}`)}
           >
-            VAI AI DETTAGLI
+            DETTAGLI MACABRI
           </Button>
         </Card.Body>
       </Card>

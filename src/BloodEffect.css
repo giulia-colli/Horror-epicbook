@@ -1,0 +1,32 @@
+.blood-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; 
+  }
+  
+  .blood-splat {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('./mano.png') no-repeat center;
+    background-size: contain;
+    transform: rotate(calc(360deg * var(--random-rotation)));
+    animation: fadeOut 7s ease-out forwards;
+    
+  }
+  
+ 
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(5);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+  }
+  

@@ -5,7 +5,7 @@ describe('main rendering tests', () => {
   it('il componente Welcom viene montato correttamente', () => {
     render(<App />)
     const mainHeader = screen.getByRole('heading', {
-      name: /Horror EpiBooks/i,
+      name: /Fear the Horror EpicBooks/i,
     })
     expect(mainHeader).toBeInTheDocument()
   })
@@ -26,7 +26,7 @@ describe('main rendering tests', () => {
 })
 
 describe('filter test', () => {
-  it("finds just one result for the word 'girl'", () => {
+  it("trova un risultato se scrivi 'girl'", () => {
     render(<App />)
     const filterInputField = screen.getByPlaceholderText(/cerca un libro/i)
     fireEvent.change(filterInputField, { target: { value: 'girl' } })
@@ -34,7 +34,7 @@ describe('filter test', () => {
     expect(allTheBookCards).toHaveLength(1)
   }) 
 
-  it("finds three results for the word 'collected'", () => {
+  it("trova tre risultati se scrivi 'collected'", () => {
     render(<App />)
     const filterInputField = screen.getByPlaceholderText(/cerca un libro/i)
     fireEvent.change(filterInputField, { target: { value: 'collected' } })
